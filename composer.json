@@ -1,0 +1,14 @@
+{
+    "name": "enesdayanc/masterpass-generate-key",
+    "description": "Package generated from https://masterpassturkiye.com:8082/MMIUIMasterPass_V2/MerchantServices/MPGGenerateKeyService.asmx?WSDL using wsdltophp/packagegenerator",
+    "require": {
+        "php": ">=5.3.3",
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "./src/"
+        }
+    }
+}
