@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://masterpassturkiye.com:8082/MMIUIMasterPass_V2/MerchantServices/MPGGenerateKeyService.asmx?WSDL',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Enesdayanc\MasterpassGenerateKey\ClassMap::get(),
 );
 /**
  * Samples for Generate ServiceType
  */
-$generate = new \ServiceType\Generate($options);
+$generate = new \Enesdayanc\MasterpassGenerateKey\ServiceType\Generate($options);
 /**
  * Sample call for GenerateKey operation/method
  */
-if ($generate->GenerateKey(new \StructType\GenerateKey()) !== false) {
+if ($generate->GenerateKey(new \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKey()) !== false) {
     print_r($generate->getResult());
 } else {
     print_r($generate->getLastError());

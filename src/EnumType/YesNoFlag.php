@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace Enesdayanc\MasterpassGenerateKey\EnumType;
 
 /**
  * This class stands for YesNoFlag EnumType

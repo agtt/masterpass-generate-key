@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class GenerateKey extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: s1:GenerateKeyRequest
-     * @var \StructType\GenerateKeyRequest
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequest
      */
     public $GenerateKeyRequest;
     /**
      * Constructor method for GenerateKey
      * @uses GenerateKey::setGenerateKeyRequest()
-     * @param \StructType\GenerateKeyRequest $generateKeyRequest
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequest $generateKeyRequest
      */
-    public function __construct(\StructType\GenerateKeyRequest $generateKeyRequest = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequest $generateKeyRequest = null)
     {
         $this
             ->setGenerateKeyRequest($generateKeyRequest);
     }
     /**
      * Get GenerateKeyRequest value
-     * @return \StructType\GenerateKeyRequest
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequest
      */
     public function getGenerateKeyRequest()
     {
@@ -39,10 +39,10 @@ class GenerateKey extends AbstractStructBase
     }
     /**
      * Set GenerateKeyRequest value
-     * @param \StructType\GenerateKeyRequest $generateKeyRequest
-     * @return \StructType\GenerateKey
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequest $generateKeyRequest
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKey
      */
-    public function setGenerateKeyRequest(\StructType\GenerateKeyRequest $generateKeyRequest = null)
+    public function setGenerateKeyRequest(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequest $generateKeyRequest = null)
     {
         $this->GenerateKeyRequest = $generateKeyRequest;
         return $this;
@@ -53,7 +53,7 @@ class GenerateKey extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenerateKey
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKey
      */
     public static function __set_state(array $array)
     {

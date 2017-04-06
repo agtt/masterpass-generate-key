@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class TransactionQueryResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfOrderItem
+     * @var \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem
      */
     public $orders;
     /**
      * Constructor method for TransactionQueryResponseBody
      * @uses TransactionQueryResponseBody::setOrders()
-     * @param \ArrayType\ArrayOfOrderItem $orders
+     * @param \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem $orders
      */
-    public function __construct(\ArrayType\ArrayOfOrderItem $orders = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem $orders = null)
     {
         $this
             ->setOrders($orders);
     }
     /**
      * Get orders value
-     * @return \ArrayType\ArrayOfOrderItem|null
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem|null
      */
     public function getOrders()
     {
@@ -38,10 +38,10 @@ class TransactionQueryResponseBody extends ResponseBody
     }
     /**
      * Set orders value
-     * @param \ArrayType\ArrayOfOrderItem $orders
-     * @return \StructType\TransactionQueryResponseBody
+     * @param \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem $orders
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\TransactionQueryResponseBody
      */
-    public function setOrders(\ArrayType\ArrayOfOrderItem $orders = null)
+    public function setOrders(\Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem $orders = null)
     {
         $this->orders = $orders;
         return $this;
@@ -52,7 +52,7 @@ class TransactionQueryResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransactionQueryResponseBody
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\TransactionQueryResponseBody
      */
     public static function __set_state(array $array)
     {

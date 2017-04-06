@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class SetDefaultAddressResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfString1
+     * @var \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString1
      */
     public $source_address_list;
     /**
      * Constructor method for SetDefaultAddressResponseBody
      * @uses SetDefaultAddressResponseBody::setSource_address_list()
-     * @param \ArrayType\ArrayOfString1 $source_address_list
+     * @param \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString1 $source_address_list
      */
-    public function __construct(\ArrayType\ArrayOfString1 $source_address_list = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString1 $source_address_list = null)
     {
         $this
             ->setSource_address_list($source_address_list);
     }
     /**
      * Get source_address_list value
-     * @return \ArrayType\ArrayOfString1|null
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString1|null
      */
     public function getSource_address_list()
     {
@@ -38,10 +38,10 @@ class SetDefaultAddressResponseBody extends ResponseBody
     }
     /**
      * Set source_address_list value
-     * @param \ArrayType\ArrayOfString1 $source_address_list
-     * @return \StructType\SetDefaultAddressResponseBody
+     * @param \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString1 $source_address_list
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\SetDefaultAddressResponseBody
      */
-    public function setSource_address_list(\ArrayType\ArrayOfString1 $source_address_list = null)
+    public function setSource_address_list(\Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString1 $source_address_list = null)
     {
         $this->source_address_list = $source_address_list;
         return $this;
@@ -52,7 +52,7 @@ class SetDefaultAddressResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SetDefaultAddressResponseBody
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\SetDefaultAddressResponseBody
      */
     public static function __set_state(array $array)
     {

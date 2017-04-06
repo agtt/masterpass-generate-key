@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GenerateKeyResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GenerateKeyResult
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult
      */
     public $GenerateKeyResult;
     /**
      * Constructor method for GenerateKeyResponse
      * @uses GenerateKeyResponse::setGenerateKeyResult()
-     * @param \StructType\GenerateKeyResult $generateKeyResult
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult $generateKeyResult
      */
-    public function __construct(\StructType\GenerateKeyResult $generateKeyResult = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult $generateKeyResult = null)
     {
         $this
             ->setGenerateKeyResult($generateKeyResult);
     }
     /**
      * Get GenerateKeyResult value
-     * @return \StructType\GenerateKeyResult|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult|null
      */
     public function getGenerateKeyResult()
     {
@@ -38,10 +38,10 @@ class GenerateKeyResponse extends AbstractStructBase
     }
     /**
      * Set GenerateKeyResult value
-     * @param \StructType\GenerateKeyResult $generateKeyResult
-     * @return \StructType\GenerateKeyResponse
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult $generateKeyResult
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponse
      */
-    public function setGenerateKeyResult(\StructType\GenerateKeyResult $generateKeyResult = null)
+    public function setGenerateKeyResult(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult $generateKeyResult = null)
     {
         $this->GenerateKeyResult = $generateKeyResult;
         return $this;
@@ -52,7 +52,7 @@ class GenerateKeyResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenerateKeyResponse
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponse
      */
     public static function __set_state(array $array)
     {

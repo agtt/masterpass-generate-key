@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class GenerateKeyRequestBody extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\GenerateKeyAdditionalFields
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyAdditionalFields
      */
     public $additional_fields;
     /**
      * Constructor method for GenerateKeyRequestBody
      * @uses GenerateKeyRequestBody::setAdditional_fields()
-     * @param \StructType\GenerateKeyAdditionalFields $additional_fields
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyAdditionalFields $additional_fields
      */
-    public function __construct(\StructType\GenerateKeyAdditionalFields $additional_fields = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyAdditionalFields $additional_fields = null)
     {
         $this
             ->setAdditional_fields($additional_fields);
     }
     /**
      * Get additional_fields value
-     * @return \StructType\GenerateKeyAdditionalFields
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyAdditionalFields
      */
     public function getAdditional_fields()
     {
@@ -39,10 +39,10 @@ class GenerateKeyRequestBody extends AbstractStructBase
     }
     /**
      * Set additional_fields value
-     * @param \StructType\GenerateKeyAdditionalFields $additional_fields
-     * @return \StructType\GenerateKeyRequestBody
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyAdditionalFields $additional_fields
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequestBody
      */
-    public function setAdditional_fields(\StructType\GenerateKeyAdditionalFields $additional_fields = null)
+    public function setAdditional_fields(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyAdditionalFields $additional_fields = null)
     {
         $this->additional_fields = $additional_fields;
         return $this;
@@ -53,7 +53,7 @@ class GenerateKeyRequestBody extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenerateKeyRequestBody
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyRequestBody
      */
     public static function __set_state(array $array)
     {

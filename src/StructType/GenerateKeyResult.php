@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GenerateKeyResult extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ResponseHeader
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\ResponseHeader
      */
     public $transaction_header;
     /**
@@ -23,17 +23,17 @@ class GenerateKeyResult extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GenerateKeyResponseBody
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponseBody
      */
     public $transaction_body;
     /**
      * Constructor method for GenerateKeyResult
      * @uses GenerateKeyResult::setTransaction_header()
      * @uses GenerateKeyResult::setTransaction_body()
-     * @param \StructType\ResponseHeader $transaction_header
-     * @param \StructType\GenerateKeyResponseBody $transaction_body
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\ResponseHeader $transaction_header
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponseBody $transaction_body
      */
-    public function __construct(\StructType\ResponseHeader $transaction_header = null, \StructType\GenerateKeyResponseBody $transaction_body = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\StructType\ResponseHeader $transaction_header = null, \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponseBody $transaction_body = null)
     {
         $this
             ->setTransaction_header($transaction_header)
@@ -41,7 +41,7 @@ class GenerateKeyResult extends AbstractStructBase
     }
     /**
      * Get transaction_header value
-     * @return \StructType\ResponseHeader|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\ResponseHeader|null
      */
     public function getTransaction_header()
     {
@@ -49,17 +49,17 @@ class GenerateKeyResult extends AbstractStructBase
     }
     /**
      * Set transaction_header value
-     * @param \StructType\ResponseHeader $transaction_header
-     * @return \StructType\GenerateKeyResult
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\ResponseHeader $transaction_header
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult
      */
-    public function setTransaction_header(\StructType\ResponseHeader $transaction_header = null)
+    public function setTransaction_header(\Enesdayanc\MasterpassGenerateKey\StructType\ResponseHeader $transaction_header = null)
     {
         $this->transaction_header = $transaction_header;
         return $this;
     }
     /**
      * Get transaction_body value
-     * @return \StructType\GenerateKeyResponseBody|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponseBody|null
      */
     public function getTransaction_body()
     {
@@ -67,10 +67,10 @@ class GenerateKeyResult extends AbstractStructBase
     }
     /**
      * Set transaction_body value
-     * @param \StructType\GenerateKeyResponseBody $transaction_body
-     * @return \StructType\GenerateKeyResult
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponseBody $transaction_body
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult
      */
-    public function setTransaction_body(\StructType\GenerateKeyResponseBody $transaction_body = null)
+    public function setTransaction_body(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponseBody $transaction_body = null)
     {
         $this->transaction_body = $transaction_body;
         return $this;
@@ -81,7 +81,7 @@ class GenerateKeyResult extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenerateKeyResult
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResult
      */
     public static function __set_state(array $array)
     {

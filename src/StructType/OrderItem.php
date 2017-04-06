@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -105,7 +105,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set charge_type value
      * @param string $charge_type
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setCharge_type($charge_type = null)
     {
@@ -127,7 +127,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set preAuth_amount value
      * @param string $preAuth_amount
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setPreAuth_amount($preAuth_amount = null)
     {
@@ -149,7 +149,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set preAuth_date value
      * @param string $preAuth_date
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setPreAuth_date($preAuth_date = null)
     {
@@ -171,7 +171,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set auth_amount value
      * @param string $auth_amount
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setAuth_amount($auth_amount = null)
     {
@@ -193,7 +193,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set auth_date value
      * @param string $auth_date
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setAuth_date($auth_date = null)
     {
@@ -215,7 +215,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setStatus($status = null)
     {
@@ -237,7 +237,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_id value
      * @param string $order_id
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public function setOrder_id($order_id = null)
     {
@@ -254,7 +254,7 @@ class OrderItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem
      */
     public static function __set_state(array $array)
     {

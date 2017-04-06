@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class ExternalAccountResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\ExternalAccountCustomField
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountCustomField
      */
     public $custom_fields;
     /**
      * Constructor method for ExternalAccountResponse
      * @uses ExternalAccountResponse::setCustom_fields()
-     * @param \StructType\ExternalAccountCustomField $custom_fields
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountCustomField $custom_fields
      */
-    public function __construct(\StructType\ExternalAccountCustomField $custom_fields = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountCustomField $custom_fields = null)
     {
         $this
             ->setCustom_fields($custom_fields);
     }
     /**
      * Get custom_fields value
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountCustomField
      */
     public function getCustom_fields()
     {
@@ -39,10 +39,10 @@ class ExternalAccountResponse extends AbstractStructBase
     }
     /**
      * Set custom_fields value
-     * @param \StructType\ExternalAccountCustomField $custom_fields
-     * @return \StructType\ExternalAccountResponse
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountCustomField $custom_fields
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountResponse
      */
-    public function setCustom_fields(\StructType\ExternalAccountCustomField $custom_fields = null)
+    public function setCustom_fields(\Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountCustomField $custom_fields = null)
     {
         $this->custom_fields = $custom_fields;
         return $this;
@@ -53,7 +53,7 @@ class ExternalAccountResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ExternalAccountResponse
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\ExternalAccountResponse
      */
     public static function __set_state(array $array)
     {

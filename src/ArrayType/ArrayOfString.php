@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Enesdayanc\MasterpassGenerateKey\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -40,7 +40,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * Set account_name value
      * @throws \InvalidArgumentException
      * @param string[] $account_name
-     * @return \ArrayType\ArrayOfString
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString
      */
     public function setAccount_name(array $account_name = array())
     {
@@ -57,7 +57,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * Add item to account_name value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \ArrayType\ArrayOfString
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString
      */
     public function addToAccount_name($item)
     {
@@ -130,7 +130,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfString
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfString
      */
     public static function __set_state(array $array)
     {

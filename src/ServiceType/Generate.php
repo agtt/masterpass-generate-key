@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Enesdayanc\MasterpassGenerateKey\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Generate extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GenerateKey $parameters
-     * @return \StructType\GenerateKeyResponse|bool
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKey $parameters
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponse|bool
      */
-    public function GenerateKey(\StructType\GenerateKey $parameters)
+    public function GenerateKey(\Enesdayanc\MasterpassGenerateKey\StructType\GenerateKey $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->GenerateKey($parameters));
@@ -32,7 +32,7 @@ class Generate extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\GenerateKeyResponse
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\GenerateKeyResponse
      */
     public function getResult()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassGenerateKey\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MPListItem extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Card
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\Card
      */
     public $Card;
     /**
@@ -23,17 +23,17 @@ class MPListItem extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\Contact
      */
     public $Contact;
     /**
      * Constructor method for MPListItem
      * @uses MPListItem::setCard()
      * @uses MPListItem::setContact()
-     * @param \StructType\Card $card
-     * @param \StructType\Contact $contact
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\Card $card
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\Contact $contact
      */
-    public function __construct(\StructType\Card $card = null, \StructType\Contact $contact = null)
+    public function __construct(\Enesdayanc\MasterpassGenerateKey\StructType\Card $card = null, \Enesdayanc\MasterpassGenerateKey\StructType\Contact $contact = null)
     {
         $this
             ->setCard($card)
@@ -41,7 +41,7 @@ class MPListItem extends AbstractStructBase
     }
     /**
      * Get Card value
-     * @return \StructType\Card|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\Card|null
      */
     public function getCard()
     {
@@ -49,17 +49,17 @@ class MPListItem extends AbstractStructBase
     }
     /**
      * Set Card value
-     * @param \StructType\Card $card
-     * @return \StructType\MPListItem
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\Card $card
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\MPListItem
      */
-    public function setCard(\StructType\Card $card = null)
+    public function setCard(\Enesdayanc\MasterpassGenerateKey\StructType\Card $card = null)
     {
         $this->Card = $card;
         return $this;
     }
     /**
      * Get Contact value
-     * @return \StructType\Contact|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\Contact|null
      */
     public function getContact()
     {
@@ -67,10 +67,10 @@ class MPListItem extends AbstractStructBase
     }
     /**
      * Set Contact value
-     * @param \StructType\Contact $contact
-     * @return \StructType\MPListItem
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\Contact $contact
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\MPListItem
      */
-    public function setContact(\StructType\Contact $contact = null)
+    public function setContact(\Enesdayanc\MasterpassGenerateKey\StructType\Contact $contact = null)
     {
         $this->Contact = $contact;
         return $this;
@@ -81,7 +81,7 @@ class MPListItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MPListItem
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\MPListItem
      */
     public static function __set_state(array $array)
     {

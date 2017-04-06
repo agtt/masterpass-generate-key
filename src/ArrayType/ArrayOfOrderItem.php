@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Enesdayanc\MasterpassGenerateKey\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\OrderItem[]
+     * @var \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem[]
      */
     public $order;
     /**
      * Constructor method for ArrayOfOrderItem
      * @uses ArrayOfOrderItem::setOrder()
-     * @param \StructType\OrderItem[] $order
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem[] $order
      */
     public function __construct(array $order = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\OrderItem[]|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem[]|null
      */
     public function getOrder()
     {
@@ -45,15 +45,15 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\OrderItem[] $order
-     * @return \ArrayType\ArrayOfOrderItem
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem[] $order
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem
      */
     public function setOrder(array $order = array())
     {
         foreach ($order as $arrayOfOrderItemOrderItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOrderItemOrderItem instanceof \StructType\OrderItem) {
-                throw new \InvalidArgumentException(sprintf('The order property can only contain items of \StructType\OrderItem, "%s" given', is_object($arrayOfOrderItemOrderItem) ? get_class($arrayOfOrderItemOrderItem) : gettype($arrayOfOrderItemOrderItem)), __LINE__);
+            if (!$arrayOfOrderItemOrderItem instanceof \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem) {
+                throw new \InvalidArgumentException(sprintf('The order property can only contain items of \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem, "%s" given', is_object($arrayOfOrderItemOrderItem) ? get_class($arrayOfOrderItemOrderItem) : gettype($arrayOfOrderItemOrderItem)), __LINE__);
             }
         }
         if (is_null($order) || (is_array($order) && empty($order))) {
@@ -66,14 +66,14 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
     /**
      * Add item to order value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrderItem $item
-     * @return \ArrayType\ArrayOfOrderItem
+     * @param \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem $item
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem
      */
-    public function addToOrder(\StructType\OrderItem $item)
+    public function addToOrder(\Enesdayanc\MasterpassGenerateKey\StructType\OrderItem $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrderItem) {
-            throw new \InvalidArgumentException(sprintf('The order property can only contain items of \StructType\OrderItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem) {
+            throw new \InvalidArgumentException(sprintf('The order property can only contain items of \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->order[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\OrderItem|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem|null
      */
     public function current()
     {
@@ -91,7 +91,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\OrderItem|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem|null
      */
     public function item($index)
     {
@@ -100,7 +100,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\OrderItem|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem|null
      */
     public function first()
     {
@@ -109,7 +109,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\OrderItem|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem|null
      */
     public function last()
     {
@@ -119,7 +119,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\OrderItem|null
+     * @return \Enesdayanc\MasterpassGenerateKey\StructType\OrderItem|null
      */
     public function offsetGet($offset)
     {
@@ -140,7 +140,7 @@ class ArrayOfOrderItem extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfOrderItem
+     * @return \Enesdayanc\MasterpassGenerateKey\ArrayType\ArrayOfOrderItem
      */
     public static function __set_state(array $array)
     {
